@@ -1,0 +1,78 @@
+.sidebar__navigation {
+  width: 90px;
+  height: 100%;
+  background-color: #202020;
+  padding: 40px 0px 40px 1%;
+  box-shadow: 3px 0px 0px #ff0077;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  /* tempo de transição (abrir menu) */
+  transition: 0.5s;
+}
+
+/* .sidebar__navigation:hover {
+  width: 300px;
+} */
+
+nav.sidebar__navigation.expand {
+  width: 300px;
+}
+
+.btn-expand {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.btn-expand i {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+ul {
+  height: 100%;
+  list-style-type: none;
+}
+
+.menu-item {
+  transition: 0.2s;
+}
+
+ul li.active {
+  background-color: #ff0077;
+}
+
+.menu-item:hover {
+  background: #ff0077;
+}
+
+.menu-item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 4%;
+  display: flex;
+  margin-bottom: 20px;
+  line-height: 40px;
+  white-space: nowrap;
+}
+
+.txt-link {
+  margin-left: 70px;
+  /* suavizar o movimento do texto */
+  transition: 0.5s;
+  opacity: 0;
+}
+
+nav.sidebar__navigation.expand .txt-link {
+  /* sempre que minha sidebar tiver a classe expandir, quero que aconteça alguma coisa com o txt-link */
+  margin-left: 40px;
+  opacity: 1;
+}
+
+.icon i {
+  font-size: 30px;
+  margin-left: 10px;
+}

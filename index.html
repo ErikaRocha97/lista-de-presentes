@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+    <link rel="stylesheet" href="./src/styles/sidebar.css" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+
+    <!-- Importar cdn para importar os ícones do Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <!-- BARRA DE NAVEGAÇÃO LATERAL -->
+      <nav class="sidebar__navigation">
+        <div class="btn-expand">
+          <i class="bi bi-list" id="btn-exp"></i>
+        </div>
+        <ul>
+          <li class="menu-item active">
+            <a href="#">
+              <span class="icon"><i class="bi bi-house-door"></i></span>
+              <span class="txt-link">Início</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <span class="icon"><i class="bi bi-person"></i></span>
+              <span class="txt-link">Minha conta</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <span class="icon"><i class="bi bi-gift"></i></span>
+              <span class="txt-link">Minha lista</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <span class="icon"><i class="bi bi-people"></i></span>
+              <span class="txt-link">Amigos</span>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="#">
+              <span class="icon"><i class="bi bi-clipboard"></i></span>
+              <span class="txt-link">ECB</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <span class="icon"><i class="bi bi-box-arrow-left"></i> </span>
+              <span class="txt-link">Sair</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Conteúdo principal -->
+    <main>
+      <div id="main-container">
+        <!-- cabeçalho -->
+        <div class="header">
+          <h1>Lista de presente de [Nome]</h1>
+        </div>
+        <div class="filter">
+          <span>Filtros</span>
+        </div>
+        <div class="gift-container">
+          <div class="gift__list">
+            <!-- Presente 1 -->
+            <div class="gift">
+              <img src="/src/images/presente.jpg" class="gift-image" alt="" />
+              <div class="gift-info">
+                <span class="gift-name">Nome do presente</span>
+                <a class="gift-store" href="">Ver na loja</a>
+                <span class="gift-price">R$ 99,99</span>
+                <button class="btn-default">Presentear</button>
+              </div>
+            </div>
+            <!-- Presente 2 -->
+            <div class="gift">
+              <img src="/src/images/presente.jpg" class="gift-image" alt="" />
+              <div class="gift-info">
+                <span class="gift-name">Nome do presente</span>
+                <a class="gift-store" href="">Ver na loja</a>
+                <span class="gift-price">R$ 99,99</span>
+                <button class="btn-default">Presentear</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Importar Javascript -->
+    <script src="menu.js"></script>
+  </body>
+</html>
