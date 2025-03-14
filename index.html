@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/styles/styles.css" />
-    <link rel="stylesheet" href="./src/styles/sidebar.css" />
+    <title>Lista de presentes</title>
+
     <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="stylesheet" href="./src/styles/header.css" />
 
     <!-- Importar cdn para importar os ícones do Bootstrap -->
     <link
@@ -15,89 +15,175 @@
     />
   </head>
   <body>
-    <div class="sidebar">
-      <!-- BARRA DE NAVEGAÇÃO LATERAL -->
-      <nav class="sidebar__navigation">
-        <div class="btn-expand">
-          <i class="bi bi-list" id="btn-exp"></i>
+    <header>
+      <nav id="nav_bar">
+        <div class="nav_logo">
+          <span><i class="bi bi-gift-fill"></i></span>
+          <span>GIFTLIST</span>
         </div>
-        <ul>
-          <li class="menu-item active">
-            <a href="#">
-              <span class="icon"><i class="bi bi-house-door"></i></span>
-              <span class="txt-link">Início</span>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a href="#">
-              <span class="icon"><i class="bi bi-person"></i></span>
-              <span class="txt-link">Minha conta</span>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a href="#">
-              <span class="icon"><i class="bi bi-gift"></i></span>
-              <span class="txt-link">Minha lista</span>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a href="#">
-              <span class="icon"><i class="bi bi-people"></i></span>
-              <span class="txt-link">Amigos</span>
-            </a>
-          </li>
 
+        <ul id="nav_list">
           <li class="menu-item">
-            <a href="#">
-              <span class="icon"><i class="bi bi-clipboard"></i></span>
-              <span class="txt-link">ECB</span>
-            </a>
+            <a href="#">Início</a>
           </li>
           <li class="menu-item">
-            <a href="#">
-              <span class="icon"><i class="bi bi-box-arrow-left"></i> </span>
-              <span class="txt-link">Sair</span>
-            </a>
+            <a href="#">Minha lista</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Amigos</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Sair</a>
           </li>
         </ul>
       </nav>
-    </div>
-    <!-- Conteúdo principal -->
+    </header>
+
     <main>
       <div id="main-container">
-        <!-- cabeçalho -->
-        <div class="header">
-          <h1>Lista de presente de [Nome]</h1>
+        <div id="filter">
+          <h3>Filtros</h3>
         </div>
-        <div class="filter">
-          <span>Filtros</span>
-        </div>
-        <div class="gift-container">
-          <div class="gift__list">
-            <!-- Presente 1 -->
-            <div class="gift">
-              <img src="/src/images/presente.jpg" class="gift-image" alt="" />
-              <div class="gift-info">
-                <span class="gift-name">Nome do presente</span>
-                <a class="gift-store" href="">Ver na loja</a>
-                <span class="gift-price">R$ 99,99</span>
-                <button class="btn-default">Presentear</button>
-              </div>
+        <div id="gift-container">
+          <!-- Cada presente -->
+
+          <!-- Cada presente -->
+          <div class="gift-card">
+            <div class="gift-id">
+              <img src="./src/images/gift.png" class="gift-image" alt="" />
+
+              <span class="gift-name">Nome do presente</span>
+              <a class="gift-store" href="">Onde comprar</a>
             </div>
-            <!-- Presente 2 -->
-            <div class="gift">
-              <img src="/src/images/presente.jpg" class="gift-image" alt="" />
-              <div class="gift-info">
-                <span class="gift-name">Nome do presente</span>
-                <a class="gift-store" href="">Ver na loja</a>
-                <span class="gift-price">R$ 99,99</span>
-                <button class="btn-default">Presentear</button>
-              </div>
+
+            <div class="gift-buy">
+              <span class="gift-price">R$ 99,99</span>
+
+              <button class="btn-default">Presentear</button>
             </div>
           </div>
+
+          <!-- Cada presente -->
+          <div class="gift-card">
+            <div class="gift-id">
+              <img src="./src/images/gift.png" class="gift-image" alt="" />
+
+              <span class="gift-name">Nome do presente</span>
+              <a class="gift-store" href="">Onde comprar</a>
+            </div>
+
+            <div class="gift-buy">
+              <span class="gift-price">R$ 99,99</span>
+
+              <button class="btn-default">Presentear</button>
+            </div>
+          </div>
+
+          <!-- Cada presente -->
+          <div class="gift-card">
+            <div class="gift-id">
+              <img src="./src/images/gift.png" class="gift-image" alt="" />
+
+              <span class="gift-name">Nome do presente</span>
+              <a class="gift-store" href="">Onde comprar</a>
+            </div>
+
+            <div class="gift-buy">
+              <span class="gift-price">R$ 99,99</span>
+
+              <button class="btn-default">Presentear</button>
+            </div>
+          </div>
+
+          <!-- Cada presente -->
+          <div class="gift-card">
+            <div class="gift-id">
+              <img src="./src/images/gift.png" class="gift-image" alt="" />
+
+              <span class="gift-name">Nome do presente</span>
+              <a class="gift-store" href="">Onde comprar</a>
+            </div>
+
+            <div class="gift-buy">
+              <span class="gift-price">R$ 99,99</span>
+
+              <button class="btn-default">Presentear</button>
+            </div>
+          </div>
+
+          <!-- Cada presente -->
+          <div class="gift-card">
+            <div class="gift-id">
+              <img src="./src/images/gift.png" class="gift-image" alt="" />
+
+              <span class="gift-name">Nome do presente</span>
+              <a class="gift-store" href="">Onde comprar</a>
+            </div>
+
+            <div class="gift-buy">
+              <span class="gift-price">R$ 99,99</span>
+
+              <button class="btn-default">Presentear</button>
+            </div>
+          </div>
+
+          <!-- Cada presente -->
+          <div class="gift-card">
+            <div class="gift-id">
+              <img src="./src/images/gift.png" class="gift-image" alt="" />
+
+              <span class="gift-name">Nome do presente</span>
+              <a class="gift-store" href="">Onde comprar</a>
+            </div>
+
+            <div class="gift-buy">
+              <span class="gift-price">R$ 99,99</span>
+
+              <button class="btn-default">Presentear</button>
+            </div>
+          </div>
+
+          <!-- Cada presente -->
+          <div class="gift-card">
+            <div class="gift-id">
+              <img src="./src/images/gift.png" class="gift-image" alt="" />
+
+              <span class="gift-name">Nome do presente</span>
+              <a class="gift-store" href="">Onde comprar</a>
+            </div>
+
+            <div class="gift-buy">
+              <span class="gift-price">R$ 99,99</span>
+
+              <button class="btn-default">Presentear</button>
+            </div>
+          </div>
+
+          <!-- <div class="gift-card">
+            <div class="card-left">
+              <img src="./src/images/gift.png" class="gift-image" alt="" />
+
+              <div class="gift-info">
+                <span class="gift-name">Nome do presente</span>
+                <a class="gift-store" href="">Ver na loja</a>
+                <span class="gift-price">R$ 99,99</span>
+              </div>
+            </div>
+
+            <div class="card-right">
+              <a href="">
+                <i class="bi bi-heart-fill"></i>
+              </a>
+              <button class="btn-default">Presentear</button>
+            </div>
+          </div> -->
+
+          <!--  -->
         </div>
       </div>
     </main>
+
+    <footer></footer>
     <!-- Importar Javascript -->
     <script src="menu.js"></script>
   </body>
