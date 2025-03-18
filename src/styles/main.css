@@ -2,15 +2,29 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+@import url("header.css");
+@import url("friend-list.css");
+@import url("my-list.css");
+@import url("gift-container.css");
+
 * {
   font-family: "Poppins", sans-serif;
+  color: #222016;
   margin: 0;
   padding: 0;
   /* box-sizing vai ajudar na responsividade */
   box-sizing: border-box;
-  color: #222016;
   text-decoration: none;
   list-style: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: #f9f9f9;
+  gap: 20px;
+  /* overflow-x: auto; */
 }
 
 a {
@@ -21,84 +35,12 @@ a {
 
 a:hover {
   /* quando posiciona a seta no link */
-  color: #222016;
+  /* color: #222016; */
+  text-decoration: underline;
 }
 
-#main-container {
-  display: flex;
-  padding: 50px;
-  background-color: #f9f9f9;
-  gap: 20px;
-}
-
-#filter {
-  background-color: #fff;
-  width: 250px;
-  padding: 10px;
-}
-
-#gift-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-
-  gap: 20px;
-}
-
-.gift-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 400px;
-  min-width: 190px;
-  width: 25%%;
-
-  background-color: #fff;
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.1);
-  position: relative;
-  overflow: hidden;
-}
-
-/* .gift-card i {
-  position: absolute;
-  display: flex;
-  margin-left: 140px;
-  font-size: 30px;
-  color: #d60072;
-} */
-
-.gift-id {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.gift-image {
-  height: 150ox;
-  width: 150px;
-  background-color: #fff;
-}
-
-.gift-name {
-  font-size: 18px;
-  font-weight: 600;
-  align-items: center;
-  margin-top: 10px;
+h1 {
   margin-bottom: 10px;
-}
-
-.gift-buy {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.gift-price {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 20px;
 }
 
 .btn-default {
@@ -111,6 +53,7 @@ a:hover {
   font-weight: 600;
   cursor: pointer;
   box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
 }
 
 /* quando o cursor estiver sobre o botão */
@@ -118,42 +61,17 @@ a:hover {
   background-color: #d60072;
 }
 
-@media screen and (max-width: 1180px) {
-  #main-container {
-    display: flex;
-    padding: 50px;
-    background-color: #f9f9f9;
-    gap: 20px;
-    justify-content: center;
-  }
-
-  #gift-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    align-items: center;
-    justify-items: center;
-  }
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 }
 
-@media screen and (max-width: 670px) {
-  #main-container {
-    display: flex;
-    padding: 50px;
-    background-color: #f9f9f9;
-    gap: 20px;
-    justify-content: center;
-  }
+*::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 8px;
+}
 
-  #gift-container {
-    display: flex;
-    flex-direction: column;
-    width: 210px;
-    align-items: center;
-    justify-items: center;
-  }
-
-  #filter {
-    display: none;
-  }
+*::-webkit-scrollbar-thumb {
+  background-color: #222016;
+  border-radius: 20px;
 }

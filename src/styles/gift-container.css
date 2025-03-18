@@ -1,0 +1,88 @@
+#gift-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 10px;
+  gap: 20px;
+  height: 65vh;
+  /* overflow-x: hidden; */
+  overflow-y: auto;
+}
+
+.gift-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 350px;
+  min-width: 190px;
+  width: 25%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.gift-image {
+  height: 150ox;
+  width: 150px;
+  background-color: #fff;
+}
+
+.gift-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.gift-store {
+  font-size: 14px;
+}
+
+.gift-price {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1180px) {
+  #main-container {
+    display: flex;
+    padding: 50px;
+    background-color: #f9f9f9;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  #gift-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  #main-container {
+    display: flex;
+    padding: 50px;
+    background-color: #f9f9f9;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  #gift-container {
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  #filter {
+    display: none;
+  }
+}
